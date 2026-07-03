@@ -1,6 +1,6 @@
 import pytest
 from datetime import date, timedelta
-from services.validator import CouponValidator
+from app.services.validator import CouponValidator
 
 def make_coupon(**kwargs):
     defaults = {

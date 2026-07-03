@@ -1,5 +1,5 @@
 import sqlite3, pytest
-from services.redemption import RedemptionService
+from app.services.redemption import RedemptionService
 
 @pytest.fixture
 def db(tmp_path):

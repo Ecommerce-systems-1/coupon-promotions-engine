@@ -1,4 +1,5 @@
-from services.calculator import DiscountCalculator
+import pytest
+from app.services.calculator import DiscountCalculator
 
 def test_percentage_discount():
     c = {"type": "PERCENTAGE", "value": 20, "buy_quantity": None, "get_quantity": None}

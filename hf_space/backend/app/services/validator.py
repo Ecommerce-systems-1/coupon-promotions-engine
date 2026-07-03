@@ -26,5 +26,5 @@ class CouponValidator:
             allowed = set(json.loads(coupon["applicable_categories"]))
             cart_cats = {i["category"] for i in cart_items}
             if not allowed & cart_cats:
-                return ValidationResult(False, f"Coupon only valid for categories: {', '.join(allowed)}")
+                return ValidationResult(False, f"Coupon only valid for category: {', '.join(allowed)}")
         return ValidationResult(True)
